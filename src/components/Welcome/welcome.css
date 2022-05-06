@@ -1,0 +1,197 @@
+.sk-panelnav {
+    width: 70%;
+}
+.sk-panelnav {
+    margin: auto;
+    width: 80%;
+}
+
+.sk-panelnav .welcome-centre-heading {
+    text-align: center;
+}
+
+.sk-panelnav .welcome-centre-heading h2 {
+    color: #3c3d41;
+    font-size: 32px;
+    font-family: "Nobblee-Light", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.sk-panelnav .welcome-centre-heading h3 {
+    color: #009c9c;
+    font-size: 18px;
+    font-family: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding-bottom: 30px;
+}
+
+.sk-panelnav .panel-grid {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+    -ms-grid-rows: 1fr 30px 1fr;
+    gap: 30px;
+}
+
+.sk-panelnav .panel-wrapper {
+    position: relative;
+}
+.sk-panelnav .grab {
+    cursor: grab;
+}
+
+.sk-panelnav .panel-wrapper .panel {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 18px;
+    margin-bottom: 0;
+    transition: .4s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    min-width: 280px;
+}
+.sk-panelnav .panel {
+    border: none;
+    background: url('https://mobilemanager.ee.co.uk/CustomerWebCommon/images/welcomepage/background.png') no-repeat 0 0;
+    background-size: cover;
+    border-radius: 16px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.sk-panelnav .panel-wrapper .panel-heading {
+    min-height: 124px;
+}
+.sk-panelnav .panel-wrapper .panel-heading {
+    min-height: 110px;
+    padding: 0;
+}
+.sk-panelnav .panel .panel-heading {
+    background-color: transparent;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.sk-panelnav .panel .panel-heading h3 {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Rubrik-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: -7px;
+}
+
+.sk-panelnav .panel .panel-heading h4 {
+    color: #fff;
+    font-size: "Rubrik-Regular", sans-serif;
+    font-family: "Rubrik-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.sk-panelnav .panel-wrapper .panel-bills .panel-image, .sk-panelnav .panel-wrapper .panel-document-repository .panel-image, .sk-panelnav .panel-wrapper .panel-help-and-support .panel-image, .sk-panelnav .panel-wrapper .panel-order .panel-image, .sk-panelnav .panel-wrapper .panel-services .panel-image, .sk-panelnav .panel-wrapper .panel-simswap .panel-image {
+    background: 0 0;
+    min-height: auto;
+}
+.sk-panelnav .panel-wrapper .panel-image {
+    min-height: auto;
+}
+.sk-panelnav .panel-wrapper .panel-image {
+    background-size: cover!important;
+    min-height: 200px;
+}
+.sk-panelnav .panel-wrapper .panel-body {
+    position: relative;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+}
+.sk-panelnav .panel .panel-body {
+    background-color: transparent;
+}
+.panel-body {
+    padding: 15px;
+}
+.text-center {
+    text-align: center;
+}
+
+.sk-panelnav .panel-wrapper .panel-body .panel-icon {
+    display: block;
+    height: 48px;
+    transform: translateX(0) translateY(0);
+}
+.sk-panelnav .panel-wrapper .panel-body .panel-icon {
+    font-size: 48px;
+    color: #fff;
+    display: none;
+    position: relative;
+    transform: translateX(0) translateY(-50%);
+}
+
+.sk-panelnav .panel-wrapper .panel-body .btn-group {
+    background: 0 0;
+    width: 100%;
+    margin-top: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: initial;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.sk-panelnav .panel-wrapper .panel-body .btn-group .button {
+    background: #ffe600;
+    color: #005a61;
+    border: none;
+}
+.sk-panelnav .panel .panel-body .btn-group>button {
+    float: none;
+}
+
+button.button, button[type=button], button[type=reset], button[type=submit], input.button, input[type=button], input[type=reset], input[type=submit] {
+    padding: 5px 24px;
+}
+
+input[type="submit"], button[type="submit"], input[type="button"], button[type="button"], input[type="reset"], button[type="reset"], input.button, button.button {
+    background: #007B85;
+    border: 1px solid #007B85;
+    border-radius: 20px 20px 20px 20px;
+    color: #FFF;
+    cursor: pointer;
+    height: 40px;
+    font-family: "Rubrik-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: visible;
+    padding: 5px 24px;
+    outline: none!important;
+    box-shadow: none;
+    width: auto;
+    transition: .4s;
+}

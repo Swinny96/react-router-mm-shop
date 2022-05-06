@@ -1,0 +1,295 @@
+:root {
+  --coal: #3c3d41;
+  --slate: #6D6E71;
+  --silver: #A9A9A9;
+  --teal: #007B85;
+  --aqua: #009C9C;
+  --dark-teal: #005A61;
+  --info: #2d6bcf;
+  --link: #ffe600;
+  --success: #4bbf73;
+  --warning1: #e5a54b;
+  --warning2: #d9534f;
+  --black1: #000000;
+  --black2: #414d45;
+  --black3: #32373b;
+  --gray1: #6c757d;
+  --gray2: #ced4da;
+  --gray3: #dee6ed;
+  --white: #fff;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em georgia, serif, sans-serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: "Rubrik-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4em;
+  word-wrap: break-word;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  color: #3c3d41;
+  margin: 0px;
+}
+
+h1 {
+  font-family: "Nobblee-Light", sans-serif;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (max-width: 783px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 615px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.Header-Wrapper {
+  float: left;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Header-Logo {
+  height: 40px;
+}
+
+.Header-Text {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+ul ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+dl,
+ol,
+p,
+ul {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0px 8px;
+  transition: 0.4s;
+  border-left: 1px solid var(--white);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:first-child {
+  padding-left: 0px;
+  border-left: none;
+}
+footer a:last-child {
+  padding-right: 0px;
+}
+
+footer .poweredby {
+  float: right;
+}
+
+.layout {
+  width: 100%;
+  display: grid;
+  grid:
+    "header header" auto
+    "sidebar body" 1fr
+    "sidebar footer" auto
+    / auto 1fr;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  height: 40px;
+  padding: 8px 32px;
+  background-color: var(--aqua);
+  align-self: stretch;
+  align-items: flex-start;
+}
+nav {
+  display: flex;
+  grid-area: sidebar;
+  background-color: var(--aqua);
+  align-self: stretch;
+}
+
+main {
+  display: flex;
+  grid-area: body;
+  background-color: #f4f4f4;
+  padding: 2em;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.offers, .products {
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background: #2a2a2a;
+  color: var(--white);
+  padding: 13px 20px;
+  align-self: stretch;
+  overflow-x: auto;
+}
+
+.card_background {
+  background-image: url("../images/welcome/Background.png");
+  background-size: cover;
+  background: #007b85;
+}
+
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+}
+
+thead button.ascending::after {
+  content: '👇';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '☝️';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+} */

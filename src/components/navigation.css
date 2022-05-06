@@ -1,0 +1,211 @@
+.Sidebar-Ul {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+  }
+  .Sidebar-Li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: block;
+    width: auto;
+    border-right: 3px solid transparent;
+    position: relative;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  .Sidebar-Li .active {
+    background-color: #007b85;
+  }
+  
+  .Sidebar-Li:hover {
+    border-color: var(--aqua) #f5d500 var(--aqua) var(--aqua);
+    border-color: rgba(255, 255, 255, 0.25) #f5d500 rgba(255, 255, 255, 0.25)
+      rgba(0, 0, 0, 0.25);
+    background-color: #007b85;
+  }
+  
+  .Sidebar-Li:before {
+    border-color: var(--aqua) #f5d500 var(--aqua) var(--aqua);
+    border-width: 6px;
+    margin-top: -6px;
+    top: 50%;
+  }
+  
+  .Sidebar-Links {
+    text-align: center;
+    border-top: 1px solid transparent;
+  }
+  
+  .Sidebar-Icon {
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 0 0 7.5px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  
+  .Sidebar-Link {
+    color: var(--white);
+    padding: 12px 18px;
+    font-weight: normal;
+    text-decoration: none;
+    display: grid;
+    transition: 0.3s;
+    border-width: 6px;
+  }
+  .Sidebar-Text {
+    display: block;
+    text-transform: none;
+    white-space: pre-wrap;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  .Sidebar-Link:hover {
+    background: #007b85;
+    color: #ffe600;
+    border-color: rgba(255, 255, 255, 0.25) #f5d500 rgba(255, 255, 255, 0.25)
+      rgba(0, 0, 0, 0.25);
+  }
+  
+  .Sidebar-Link:active {
+    color: #ffe600;
+    text-decoration: underline;
+  }
+  
+  .active {
+    border-color: rgba(255, 255, 255, 0.25) #f5d500 rgba(255, 255, 255, 0.25)
+      rgba(0, 0, 0, 0.25);
+    background-color: #007b85;
+    color: var(--link) !important;
+  }
+  
+  .Sidebar-Li:hover:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-color: #007b85 #f5d500 #007b85 #007b85;
+    border-width: 6px;
+    margin-top: -6px;
+    top: 50%;
+  }
+  
+  .Sidebar-Li:hover:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 0;
+  }
+  
+  .active:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-color: #007b85 #f5d500 #007b85 #007b85;
+    border-width: 6px;
+    margin-top: -6px;
+    top: 50%;
+  }
+  
+  .active:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 0;
+  }
+  
+  @media (max-width: 450px) {
+    .Sidebar-Text {
+      display: none;
+    }
+    .Sidebar-Links {
+      border-top: 0px solid rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .Siderbar-Ul2 {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+  }
+  .Sidebar-Li2 {
+    display: block;
+    width: auto;
+    position: relative;
+    white-space: nowrap;
+  }
+  .Sidebar-Li2 .active2 {
+    background-color: var(--link);
+  }
+  
+  .Sidebar-Links2 {
+    text-align: left;
+  }
+  
+  .Sidebar-Icon2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  
+  .Sidebar-Link2 {
+    color: var(--white);
+    padding: 12px 24px;
+    font-weight: normal;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 18px auto;
+    gap: 10px;
+    align-items: baseline;
+    transition: 0.3s;
+    border-width: 6px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .Sidebar-Text2 {
+    display: block;
+    text-transform: none;
+    white-space: pre-wrap;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  .Sidebar-Link2:hover {
+    background-color: #007b85;
+    color: var(--link);
+    border-color: transparent var(--link) transparent transparent;
+  }
+  
+  .Sidebar-Link2:active {
+    color: var(--link);
+  }
+  
+  @media (max-width: 450px) {
+    .Sidebar-Text2 {
+      display: none;
+    }
+    .Sidebar-Links2 {
+      border-top: 0px solid rgba(0, 0, 0, 0.25);
+    }
+  }
+  

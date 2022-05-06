@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "EE-OBM";
+    src: local("EE-OBM"), url("../fonts/ee-obm-icons.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Nobblee-Light";
+    src: local("Nobblee-Light"),
+      url("../fonts/nobblee_light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Nobblee-Regular";
+    src: local("Nobblee-Regular"),
+      url("../fonts/nobblee_regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Rubrik-Regular";
+    src: local("Rubrik-Regular"),
+      url("../fonts/rubrik_regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Rubrik-Medium";
+    src: local("Rubrik-Medium"),
+      url("../fonts/rubrik_semibold.ttf") format("truetype");
+  }
