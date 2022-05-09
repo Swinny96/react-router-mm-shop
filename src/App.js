@@ -17,6 +17,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Shop from "./pages/Shop.js";
+import Product from "./pages/Product";
 
 function App() {
   const [cartIsEmpty] = useState(false);
@@ -52,7 +53,7 @@ function App() {
           <Route path="/about/*" element={<About />} />
           <Route path="/products/:id/*" element={<ProductDetails />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/shop/:id/*" element={<ProductDetails />} />
+          <Route path="/shop/:id/*" element={<Product />} />
           <Route path="/shop" element={<Shop />} />
           <Route
             path="/test"
